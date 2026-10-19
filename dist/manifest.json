@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Eco Bitcoin Virtual Miner Stats",
+  "version": "0.1.0",
+  "description": "Track your eBTC Virtual Miner NFTs: eBTC balance, draw odds, Boost windows and rewards. Does not mine cryptocurrency.",
+  "minimum_chrome_version": "116",
+  "icons": {
+    "16": "icons/16.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+  "action": {
+    "default_title": "Open eBTC Miner Stats"
+  },
+  "side_panel": {
+    "default_path": "src/sidepanel/index.html"
+  },
+  "background": {
+    "service_worker": "service-worker-loader.js",
+    "type": "module"
+  },
+  "permissions": [
+    "storage",
+    "alarms",
+    "sidePanel",
+    "notifications"
+  ],
+  "host_permissions": [
+    "https://rpc.fredenergy.org/*"
+  ],
+  "externally_connectable": {
+    "matches": [
+      "https://ebtc.fredenergy.org/*"
+    ]
+  }
+}
