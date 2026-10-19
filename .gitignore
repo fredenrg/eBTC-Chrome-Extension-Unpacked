@@ -1,1 +1,13 @@
-/.DS_Store
+# dependencies
+/node_modules
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env and Vite
+*.local
+.env
+.env.*
+.DS_Store
